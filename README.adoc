@@ -8,15 +8,15 @@ Maven tooling to build a Bonita custom page from the generated project documenta
 
 [source, sh]
 ----
-# git clone https://github.com/rbioteau/documentation-page-builder.git
-# cd documentation-page-builder
+> git clone https://github.com/rbioteau/documentation-page-builder.git
+> cd documentation-page-builder
 ----
 
 === Run the generation
 
 [source, sh]
 ----
-# ./mvnw clean package -DprojectDirectory=<absolute path to a Bonita Project> \
+> ./mvnw clean package -DprojectDirectory=<absolute path to a Bonita Project> \
                        -Dpage.name=<technicalPageName> \
                        -Dpage.displayName=<The page display name displayed in Bonita Portal> \
                        -Dpage.version=<The page version> \
