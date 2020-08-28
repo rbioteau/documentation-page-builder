@@ -1,0 +1,31 @@
+= Documentation page builder for Bonita
+
+Maven tooling to build a Bonita custom page from the generated project documentation
+
+== Usage
+
+=== Clone this repository
+
+[source, sh]
+----
+# git clone https://github.com/rbioteau/documentation-page-builder.git
+# cd documentation-page-builder
+----
+
+=== Run the generation
+
+[source, sh]
+----
+# ./mvnw clean package -DprojectDirectory=<absolute path to a Bonita Project> \
+                       -Dpage.name=<technicalPageName> \
+                       -Dpage.displayName=<The page display name displayed in Bonita Portal> \
+                       -Dpage.version=<The page version> \
+                       -Dpage.description=<A page description diplayed in Bonita Portal>
+----
+
+=== Deploy the generated page using Bonita Portal
+
+The result of the generation is a `${page.name}-{page.version}-page.zip` archive in `documentation-page-builder/target` folder.  
+This archive is a custom page binary. To install, go to Bonita Portal webapp, connect as an Administrator, and then in Resources, you can *Install* the page.
+This page can then be included in a application descriptor.
+ 

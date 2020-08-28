@@ -62,7 +62,7 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
-							<finalName>documentation-page</finalName>
+							<finalName>${page.name}-{page.version}-page</finalName>
 							<ignoreDirFormatExtensions>true</ignoreDirFormatExtensions>
 							<descriptorSourceDirectory>src/assembly</descriptorSourceDirectory>
 							<appendAssemblyId>false</appendAssemblyId>
