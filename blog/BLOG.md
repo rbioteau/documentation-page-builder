@@ -9,9 +9,9 @@ Let's dig into the tooling provided by asciidoctor to publish and share your pro
 If you don't know AsciiDoc you might know its little brother Markdown. They are two markup languages based on the same concept, plain text documents focused on content and conciseness.
 You can check the main differences between the two on the [Asciidoctor official site](https://asciidoctor.org/docs/asciidoc-vs-markdown/).  
 
-## Bonita + AsciiDoc = ♥
+## Bonita + AsciiDoctor = ♥
 
-When you open your project with Bonita Studio 7.11+, a new `Documentation > Generate` action is available.
+When you open your project with Bonita Studio 7.11+, a new Documentation generation feature is available.
 What it does is:
 
 * Convert all your diagram and processes into images assets
@@ -34,7 +34,7 @@ First you can clone this git [repository](https://github.com/rbioteau/documentat
 
 To do that you need [Git](https://git-scm.com/downloads) installed on your computer.
 
-Then open a terminal in a folder of your choice a execute the clone command:
+Then **open a terminal** in a folder of your choice a execute the clone command:
 
 `> git clone https://github.com/rbioteau/documentation-page-builder`
 
@@ -48,9 +48,9 @@ Keep that terminal here, we will need it later on.
 
 Let's try that on the Expense Report example ! To have the best possible result don't forget to install [GraphViz](https://graphviz.org/) on your computer first.
 
-1. Open your Bonita Studio (Subscription 7.11.0+)
+1. **Open** your Bonita Studio (Subscription 7.11.0+)
 
-1. Import the Expense report example from the welcome page
+1. **Import** the Expense report example from the welcome page
 
 ![welcome_page](img/welcome_page.png)
 
@@ -58,7 +58,7 @@ An import dialog opens, create a new project with the content of the example lik
 
 ![import_dialog](img/import_dialog.png)
 
-Click on Import
+**Click on Import**
 
 1. Once the project imported go to `File` menu and click on `Generate documentation`. Wait a few seconds (all diagrams and processes are transformed into images)...
 
@@ -70,7 +70,7 @@ Here you go with the basic generated doc for this project, you can customize the
 
 1. Now we want to publish this doc in a Living app.
 
-So go back to the `documentation-page-builder` terminal (if you haven't cloned it yet, [do that now !](#clone)), and execute the build using the following command line:
+So go back to the `documentation-page-builder` terminal (if you haven't cloned it yet, [do that now !](#clone)), and **execute** the build using the following command line:
 
 ```
 > ./mvnw package -DprojectDirectory=<Absolute path to your Studio install location>\workspace\expense-report-example \
@@ -82,21 +82,21 @@ Build success ! Look for the `expenseReportDoc-1.0-page.zip` archive in the `tar
 
 1. To publish it, you can now connect as an Administrator on the Bonita Portal. I am going to use the Portal run with my Studio for this example.
 
-Navigate to the `Resources` page
+**Navigate** to the `Resources` page
 
 ![portal_resources](img/portal_resources.png)
 
-Click on `+ Add`, click on the upload file widget and browse to the custom page in `target` folder. Hit `Next >` and `Confirm`.
+**Click** on `+ Add`, **click** on the upload file widget and **browse** to the custom page in `target` folder. **Hit** `Next >` and `Confirm`.
 Now that the page is installed. You can map it to a Living app.
 
-1. Return in your Studio and create an Application descriptor for `expense-report-project`. Here is an example of mine:
+1. **Return in your Studio** and **create** an Application descriptor for `expense-report-project`. Here is a preview of mine:
 
 ![app_descriptor](img/app_descriptor.png)
 
-As you can I have just added an orphan page using the technical name of the `custompage_expenseReportDoc` and a `doc` token. A warning is displayed because this page is not found in the project sources, it is normal as we have installed the page using the Portal. For the sake of the example I use the `User` profile for my app but you may want to use a custom profile in a real world scenario.
+As you can see I've just added an orphan page using the technical name `custompage_expenseReportDoc` and a `doc` token. A warning is displayed because this page is not found in the project sources, it is normal as we have installed the page using the Portal. For the sake of the example I use the `User` profile for my app but you may want to use a custom profile in a real world scenario.
 
-Click on `Deploy` and `Open Expense Report as User`.
-You should be redirect to this page in your browser:
+**Click** on `Deploy` and **open** `Expense Report as User`.
+You should be redirected to this page in your browser:
 
 ![doc_page](img/doc_page.png)
 
