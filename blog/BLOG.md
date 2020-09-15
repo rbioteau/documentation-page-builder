@@ -89,11 +89,11 @@ Build success ! Look for the `expenseReportDoc-1.0-page.zip` archive in the `tar
 **Click** on `+ Add`, **click** on the upload file widget and **browse** to the custom page in `target` folder. **Hit** `Next >` and `Confirm`.
 Now that the page is installed. You can map it to a Living app.
 
-1. **Return in your Studio** and **create** an Application descriptor for `expense-report-project`. Here is a preview of mine:
+1. **Return in your Studio** and **create** an Application descriptor for `expense-report-project`(*Development/Application Descriptor/New*). Here is a preview of mine:
 
 ![app_descriptor](img/app_descriptor.png)
 
-As you can see I've just added an orphan page using the technical name `custompage_expenseReportDoc` and a `doc` token. A warning is displayed because this page is not found in the project sources, it is normal as we have installed the page using the Portal. For the sake of the example I use the `User` profile for my app but you may want to use a custom profile in a real world scenario.
+As you can see I've just manually added an orphan page using the technical name `custompage_expenseReportDoc` and a `doc` token. A warning is displayed because this page is not found in the project sources, it is normal as we have installed the page using the Portal. For the sake of the example I use the `User` profile for my app but you may want to use a custom profile in a real world scenario.
 
 **Click** on `Deploy` and **open** `Expense Report as User`.
 You should be redirected to this page in your browser:
