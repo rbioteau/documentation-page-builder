@@ -89,7 +89,7 @@ Build success ! Look for the `expenseReportDoc-1.0-page.zip` archive in the `tar
 **Click** on `+ Add`, **click** on the upload file widget and **browse** to the custom page in `target` folder. **Hit** `Next >` and `Confirm`.
 Now that the page is installed. You can map it to a Living app.
 
-1. **Return in your Studio** and **create** an Application descriptor for `expense-report-project`(*Development/Application Descriptor/New*). Here is a preview of mine:
+1. **Return in your Studio** and **create** an Application descriptor for `expense-report-project`(*Development > Application Descriptor > New...*). Here is a preview of mine:
 
 ![app_descriptor](img/app_descriptor.png)
 
@@ -108,7 +108,6 @@ Have fun with Bonita ;)
 
 Romain Bioteau
 Senior R&D Software Engineer @Bonitasoft
-
 
 
 
